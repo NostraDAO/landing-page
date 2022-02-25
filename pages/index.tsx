@@ -33,9 +33,7 @@ const Home: NextPage = () => {
             </main>
             <Benefits />
       <Description />        
-      <div id="team" name="team">
     <Team />
-    </div>
     <Roadmap />
         <Footer />       
     </div>
