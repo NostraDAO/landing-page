@@ -16,7 +16,7 @@ export default function Description() {
     <ThemeProvider theme={theme}>
     <Container maxWidth="lg">
       <Box>
-        <div style={{margintop: "64px", marginBottom: "64px"}}>
+        <div style={{marginTop: "64px", marginBottom: "64px"}}>
           <div className={style.descriptionTitle}>Pick your Defi family and<br/> dominate Nostra City.</div>
           <div className={style.description }>
             NostraCity is a competition of Defi families that fight each other

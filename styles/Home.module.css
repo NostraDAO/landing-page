@@ -2,7 +2,7 @@
   
 }
 .main {
-  background-image: url("../public/nostracity.svg");
+  background-image: url("../public/gangster.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 55%;
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #484848;
+  background-color: black;
 }
 
 .made {
@@ -23,6 +23,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   color: #161616;
+  margin-bottom: 1em;
 }
 .footer {
   display: flex;
