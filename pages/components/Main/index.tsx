@@ -18,7 +18,7 @@ export default function Main() {
     <ThemeProvider theme={theme}>
     <div className={styles.mainContainer}>
       <div className={styles.imgMain}>
-        <Image src={Logo} width={200} />
+        <Image src={Logo}  />
         <div className={styles.imgMainText}>
         <Button variant="contained" color="primary">
           Coming Soon
