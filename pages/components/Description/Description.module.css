@@ -1,0 +1,18 @@
+.descriptionTitle {
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0.5em; 
+    text-align: center;
+    color: #93100D;
+}
+.description {
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 650px;
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em; 
+    font-weight: 800;
+    text-align: center;
+}

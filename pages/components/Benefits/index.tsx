@@ -19,13 +19,13 @@ export default function Benefits() {
   return (
     <>
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg" sx={{padding: '5em'}}>
+      <Container maxWidth="lg" sx={{padding: '5em', marginTop: "64px", marginBottom: "64px"}}>
         <Box>
-          <Stack direction="row" spacing={2}>
-            <Card sx={{ maxWidth: 375 }}>
+          <Stack direction="row" spacing={3}>
+            <Card sx={{ maxWidth: 375 , height: 400 }}>
               <CardContent>
                 <Typography
-                  sx={{ fontSize: '2.5em', fontWeight: "bold", mb: 2 }}
+                  sx={{ fontSize: '2.5em', fontWeight: 800, mb: 2 }}
                   color="text.primary"
                   gutterBottom
                 >
@@ -39,7 +39,7 @@ export default function Benefits() {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 375, backgroundColor: "#93100D" }}>
+            <Card sx={{ maxWidth: 375, backgroundColor: "#93100D",  maxHeight: 500}}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: '2.5em', fontWeight: "bold", mb: 2, color:"white" }}
@@ -56,7 +56,7 @@ export default function Benefits() {
               </CardContent>
             </Card>
 
-            <Card sx={{ maxWidth: 375 }}>
+            <Card sx={{ maxWidth: 375, maxHeight: 500}}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: '2.5em', fontWeight: "bold", mb: 2 }}

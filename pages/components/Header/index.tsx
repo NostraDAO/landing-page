@@ -67,9 +67,9 @@ const MenuBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ fontFamily: "Corleone", fontSize: '1.5em',  mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            NostraCity
+            Nostra<span style={{color: "#93100D"}}>City</span>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -102,15 +102,15 @@ const MenuBar = () => {
               }}
             >
               <MenuItem key={1} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Benefits</Typography>
+                <Typography textAlign="center"><Link underline="none" href="#benefits">Benefits </Link></Typography>
               </MenuItem>
 
               <MenuItem key={2} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Teams</Typography>
+                <Typography textAlign="center"><Link underline="none">Team</Link> </Typography>
               </MenuItem>
 
               <MenuItem key={3} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Roadmap</Typography>
+                <Typography textAlign="center"><Link underline="none"> Roadmap</Link> </Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -118,38 +118,43 @@ const MenuBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ fontFamily: "Corleone", flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
             NostraCity
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button
+            <Link
+              href="#benefits"  
+            component="button"
+            underline="none"
               key={1}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, color: "white", display: "block", fontFamily: "Source Sans Pro", fontSize: "1.2rem", fontWeight: "bold" }}
             >
               Benefits
-            </Button>
+            </Link>
 
-            <Button
-              key={1}
+            <Link
+            component="button"
+              key={2}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, marginLeft: "10px", color: "white", display: "block", fontFamily: "Source Sans Pro", fontSize: "1.2rem", fontWeight: "bold" }}
             >
               Roadmap
-            </Button>
+            </Link>
 
-            <Button
-              key={1}
+            <Link
+            component="button"
+              key={3}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, marginLeft: "10px", color: "white", display: "block", fontFamily: "Source Sans Pro", fontSize: "1.2rem", fontWeight: "bold" }}
             >
               Team
-            </Button>
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-          <Button variant="outlined">
+          <Button variant="outlined" sx={{marginRight: '10px'}}>
                   Coming Soon
                 </Button>
             <Button className={style} onClick={handleOpenUserMenu} sx={{ p: 0 }}>
