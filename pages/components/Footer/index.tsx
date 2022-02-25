@@ -84,6 +84,7 @@ export default function Footer() {
             <a><Image src={DiscordIcon}/></a>
             </Link>
             <Link
+            href="https://twitter.com/Nostra_City"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -94,6 +95,7 @@ export default function Footer() {
               <a><Image src={TwitterIcon}/></a>
             </Link>
             <Link
+            href="https://github.com/NostraDAO"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
