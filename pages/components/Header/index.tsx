@@ -20,12 +20,20 @@ import { ReactComponent as GitHub } from "../../../public/github.svg";
 import { ReactComponent as Twitter } from "../../../public/twitter.svg";
 import { ReactComponent as Telegram } from "../../../public/telegram.svg";
 import { ReactComponent as Discord } from "../../../public/discord.svg";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 
 const style = {
 
   color : 'white'
 };
 
+const theme = createTheme({
+  palette: {
+      primary: {
+          main: "#93100D",
+  }
+}})
 
 const MenuBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -51,6 +59,7 @@ const MenuBar = () => {
   };
 
   return (
+    <ThemeProvider theme={theme}>
     <AppBar position="static" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -199,6 +208,7 @@ const MenuBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    </ThemeProvider>
   );
 };
 export default MenuBar;
