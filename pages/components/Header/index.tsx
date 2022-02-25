@@ -16,10 +16,6 @@ import Link from "@mui/material/Link";
 import SvgIcon from "@mui/material/SvgIcon";
 import "./Header.module.css";
 
-import { ReactComponent as GitHub } from "../../../public/github.svg";
-import { ReactComponent as Twitter } from "../../../public/twitter.svg";
-import { ReactComponent as Telegram } from "../../../public/telegram.svg";
-import { ReactComponent as Discord } from "../../../public/discord.svg";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
