@@ -9,8 +9,9 @@
     z-index: 2;
 }
 .imgMain {
-    max-width: 600px;
-    max-height: 600px;
+    margin-left: 5%;
+    max-width: 500px;
+    max-height: 500px;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -20,5 +21,4 @@
 }
 .imgMainText {
     text-align: justify;
-    margin-left: 15%;
 }

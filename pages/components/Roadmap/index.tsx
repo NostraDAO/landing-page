@@ -12,7 +12,7 @@ import styles from "./Roadmap.module.css";
 
 export default function Roadmap() {
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate" id="roadmap">
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="secondary" />

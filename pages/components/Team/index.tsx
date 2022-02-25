@@ -17,7 +17,7 @@ export default function Team() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" id="team">
           <Box>
             <div className={style.teamContainer}>
               <Stack

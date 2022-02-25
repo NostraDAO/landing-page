@@ -11,13 +11,14 @@ import Benefits from './components/Benefits'
 import Team from './components/Team'
 import Link from '@mui/material/Link'
 import Roadmap from './components/Roadmap'
+import Footer from './components/Footer'
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NostraCity | </title>
-        <meta name="description" content="NostraCity" />
+        <title>NostraCity | A DeFi Mafia Game built with NFTS and Nodes </title>
+        <meta name="description" content="NostraCity. A DeFi Mafia Game built with NFTS and Nodes" />
         <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;800&display=swap" rel="stylesheet" />
       </Head>
@@ -32,11 +33,11 @@ const Home: NextPage = () => {
             </main>
             <Benefits />
       <Description />        
+      <div id="team" name="team">
     <Team />
+    </div>
     <Roadmap />
-      <footer className={styles.footer}>
-       
-             </footer>
+        <Footer />       
     </div>
   )
 }

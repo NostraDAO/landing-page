@@ -19,10 +19,13 @@ export default function Benefits() {
   return (
     <>
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg" sx={{padding: '5em', marginTop: "64px", marginBottom: "64px"}}>
+      <Container id="benefits" maxWidth="lg" sx={{padding: '5em', marginTop: "64px", marginBottom: "64px"}}>
         <Box>
+          <Typography variant="h2" sx={{fontFamily: "Source Sans Pro", fontWeight: 800, textTransform: "uppercase", fontSize: "4em", textAlign: "center", paddingBottom: "64px"}}>
+            This is where <span style={{color: "#93100D"}}>DeFi</span> meets the <span style={{ color: "#93100D" }}>Mafia</span>
+          </Typography>
           <Stack direction="row" spacing={3}>
-            <Card sx={{ maxWidth: 375 , height: 400 }}>
+            <Card sx={{ maxWidth: 375 , height: 400,  display: 'flex', flexDirection: "column", justifyContent: "center" }}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: '2.5em', fontWeight: 800, mb: 2 }}
@@ -39,7 +42,7 @@ export default function Benefits() {
                 </Typography>
               </CardContent>
             </Card>
-            <Card sx={{ maxWidth: 375, backgroundColor: "#93100D",  maxHeight: 500}}>
+            <Card sx={{ maxWidth: 375, backgroundColor: "#93100D",  height: 400,  display: 'flex', flexDirection: "column", justifyContent: "center"}}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: '2.5em', fontWeight: "bold", mb: 2, color:"white" }}
@@ -56,7 +59,7 @@ export default function Benefits() {
               </CardContent>
             </Card>
 
-            <Card sx={{ maxWidth: 375, maxHeight: 500}}>
+            <Card sx={{ maxWidth: 375, Height: 400, display: 'flex', flexDirection: "column", justifyContent: "center" }}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: '2.5em', fontWeight: "bold", mb: 2 }}
