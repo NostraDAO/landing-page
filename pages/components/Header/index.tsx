@@ -19,10 +19,6 @@ import "./Header.module.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
-const style = {
-
-  color : 'white'
-};
 
 const theme = createTheme({
   palette: {
@@ -153,7 +149,7 @@ const MenuBar = () => {
           <Button variant="outlined" sx={{marginRight: '10px'}}>
                   Coming Soon
                 </Button>
-            <Button className={style} onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+            <Button  onClick={handleOpenUserMenu} sx={{ p: 0 }}>
               Social
             </Button>
             <Menu
