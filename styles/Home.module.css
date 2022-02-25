@@ -1,9 +1,13 @@
 .container {
-  padding: 0 2rem;
+  background-image: url("../public/nostracity.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 55%;
+  background-color: #484848;
 }
 
 .main {
-  min-height: 100vh;
+  max-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -12,6 +16,12 @@
   align-items: center;
 }
 
+.made {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  column-gap: 0.5rem;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -20,7 +30,7 @@
   justify-content: center;
   align-items: center;
 }
-
+  
 .footer a {
   display: flex;
   justify-content: center;

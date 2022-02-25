@@ -1,0 +1,23 @@
+.mainContainer {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+}
+.imgMain {
+    max-width: 600px;
+    max-height: 600px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imgMain img {
+        width: 100%;
+}
+.imgMainText {
+    text-align: justify;
+    margin-left: 15%;
+}
