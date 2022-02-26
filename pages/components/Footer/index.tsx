@@ -50,7 +50,6 @@ export default function Footer() {
             </Link>
             <Link
               underline="none"
-              href="/"
               sx={{
                 fontFamily: "Source Sans Pro",
                 fontSize: "1em",
@@ -73,7 +72,7 @@ export default function Footer() {
           </Stack>
           <Stack direction="row" spacing={2}>
             <Link
-            href="https://discord.gg/nostracity"
+            href="http://discord.gg/nostracityhq"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -106,6 +105,7 @@ export default function Footer() {
               <a><Image src={GithubIcon}/></a>
             </Link>
             <Link
+            href="https://medium.com/@nostracity"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -114,6 +114,17 @@ export default function Footer() {
               }}
             >
               <a><Image src={MediumIcon}/></a>
+            </Link>
+            <Link
+            href="https://bit.ly/3GPBHxl"
+            underline="none"
+              sx={{
+                fontFamily: "Source Sans Pro",
+                fontSize: "1em",
+                fontWeight: "bold",
+              }}
+            >
+              <a><Image src={YoutubeIcon}/></a>
             </Link>
           </Stack>
         </div>

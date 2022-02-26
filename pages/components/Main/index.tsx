@@ -11,6 +11,10 @@ const theme = createTheme({
     primary: {
       main: "#93100D",
     },
+    action: {
+      disabled: "#5D5E5E",
+      disabledBackground: "#93100D",
+    },
   },
 });
 
@@ -26,6 +30,7 @@ export default function Main() {
               target="_blank"
               href="https://app.nostradao.com"
               color="primary"
+              disabled
               sx={{
                 my: 2,
                 marginLeft: "10px",
@@ -36,6 +41,22 @@ export default function Main() {
               }}
             >
               Coming Soon
+            </Button>
+            <Button
+              variant="contained"
+              target="_blank"
+              href="https://bit.ly/NostraCity"
+              color="primary"
+              sx={{
+                my: 2,
+                marginLeft: "10px",
+                textTransform: "uppercase",
+                fontFamily: "Source Sans Pro",
+                fontWeight: "bold",
+                fontSize: "1.2em",
+              }}
+            >
+              Whitepaper
             </Button>
           </div>
         </div>

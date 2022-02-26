@@ -24,6 +24,10 @@ const theme = createTheme({
     primary: {
       main: "#93100D",
     },
+    action: {
+      disabled: "#5D5E5E",
+      disabledBackground: "#93100D",
+    },
   },
 });
 
@@ -53,7 +57,7 @@ const MenuBar = () => {
   return (
     <ThemeProvider theme={theme}>
       <AppBar position="static" sx={{ backgroundColor: "black" }}>
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Toolbar disableGutters>
             <Typography
               variant="h6"
@@ -193,12 +197,13 @@ const MenuBar = () => {
                 href="https://app.nostradao.com"
                 target="_blank"
                 variant="contained"
+                
                 sx={{
                   marginRight: "10px",
                   fontFamily: "Source Sans Pro",
                   fontWeight: "bold",
                 }}
-              >
+              disabled>
                 Coming Soon
               </Button>
               <Button
@@ -259,7 +264,11 @@ const MenuBar = () => {
                   </Link>
                 </MenuItem>
                 <MenuItem key={1} onClick={handleCloseUserMenu}>
-                  <Link href="https://t.me/NostraCity" underline="none" target="_blank">
+                  <Link
+                    href="https://t.me/NostraCity"
+                    underline="none"
+                    target="_blank"
+                  >
                     <p>Telegram</p>
                   </Link>
                 </MenuItem>
@@ -269,7 +278,7 @@ const MenuBar = () => {
               key={3}
               target="_blank"
               underline="none"
-              href="http://bit.ly/NostraCity"
+              href="#"
               sx={{
                 my: 2,
                 marginLeft: "10px",
@@ -279,7 +288,7 @@ const MenuBar = () => {
                 fontWeight: "bold",
               }}
             >
-              Documentation
+              Whitelist
             </Link>
           </Toolbar>
         </Container>
