@@ -24,7 +24,7 @@ export default function Description() {
             each season lasting 3 weeks. The family who drives up the highest
             amount of sales, wins a windfall of extra $BOSS tokens. Losing
             families win the same amount of tokens they invested. All families
-            will be able to keep NFTs, and use the $BOSStoken to purchase their
+            will be able to keep NFTs, and use the $BOSS token to purchase their
             own DAAS nodes in the form of yield-bearing NFTs for further
             seasons.
           </div>

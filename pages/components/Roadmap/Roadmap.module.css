@@ -2,3 +2,7 @@
     list-style-type: none;
 
 }
+.liClass  span{
+position: relative;
+top: 3px;    
+}

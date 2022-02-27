@@ -26,15 +26,15 @@ export default function Footer() {
       <footer>
         <div className={styles.container}>
           <Image src={Logo} width={150} height={100}  />
-          <Stack spacing={2} direction="row">
+          <Stack spacing={6} direction="row">
             <Link
+            href="/"
               underline="none"
-              href="/"
               sx={{
                 fontFamily: "Source Sans Pro",
                 fontSize: "1em",
                 fontWeight: "bold",
-              }}
+              }}id="roadmap"
             >
               Home
             </Link>
@@ -44,9 +44,10 @@ export default function Footer() {
                 fontFamily: "Source Sans Pro",
                 fontSize: "1em",
                 fontWeight: "bold",
+                marginLeft: "1em",
               }}
             >
-             <Scrollchor to="#benefits">Benefits</Scrollchor>
+            <Scrollchor to="#benefits">Benefits</Scrollchor>
             </Link>
             <Link
               underline="none"
@@ -56,18 +57,18 @@ export default function Footer() {
                 fontWeight: "bold",
               }}
             >
-            <Scrollchor to="#roadmap">Roadmap</Scrollchor>
+             <Scrollchor to="#roadmap">Roadmap</Scrollchor>
             </Link>
+
             <Link
               underline="none"
-              href="/"
               sx={{
                 fontFamily: "Source Sans Pro",
                 fontSize: "1em",
                 fontWeight: "bold",
               }}
             >
-              <Scrollchor to="#team">Team</Scrollchor>
+             <Scrollchor to="#team">Team</Scrollchor>
             </Link>
           </Stack>
           <Stack direction="row" spacing={2}>
@@ -83,7 +84,7 @@ export default function Footer() {
             <a><Image src={DiscordIcon}/></a>
             </Link>
             <Link
-            href="https://twitter.com/Nostra_City"
+            href="http://twitter.com/Nostra_City"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -94,7 +95,7 @@ export default function Footer() {
               <a><Image src={TwitterIcon}/></a>
             </Link>
             <Link
-            href="https://github.com/NostraDAO"
+            href="http://github.com/NostraDAO"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -105,7 +106,7 @@ export default function Footer() {
               <a><Image src={GithubIcon}/></a>
             </Link>
             <Link
-            href="https://medium.com/@nostracity"
+            href="http://medium.com/@nostracity"
               underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",
@@ -116,7 +117,7 @@ export default function Footer() {
               <a><Image src={MediumIcon}/></a>
             </Link>
             <Link
-            href="https://bit.ly/3GPBHxl"
+            href="http://bit.ly/3GPBHxl"
             underline="none"
               sx={{
                 fontFamily: "Source Sans Pro",

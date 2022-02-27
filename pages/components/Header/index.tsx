@@ -243,33 +243,51 @@ const MenuBar = () => {
                     <p>Discord</p>
                   </Link>
                 </MenuItem>
-                <MenuItem key={1} onClick={handleCloseUserMenu}>
+                <MenuItem key={2} onClick={handleCloseUserMenu}>
                   <Link
                     className="tooltip-item"
                     underline="none"
-                    href="https://github.com/NostraDAO/nostradao-frontend"
+                    href="https://github.com/NostraDAO"
                     target="_blank"
                   >
                     <p>GitHub</p>
                   </Link>
                 </MenuItem>
-                <MenuItem key={1} onClick={handleCloseUserMenu}>
+                <MenuItem key={3} onClick={handleCloseUserMenu}>
                   <Link
                     className="tooltip-item"
                     underline="none"
-                    href="https://twitter.com/NostraDAO"
+                    href="https://twitter.com/Nostra_City"
                     target="_blank"
                   >
                     <p>Twitter</p>
                   </Link>
                 </MenuItem>
-                <MenuItem key={1} onClick={handleCloseUserMenu}>
+                <MenuItem key={4} onClick={handleCloseUserMenu}>
                   <Link
                     href="https://t.me/NostraCity"
                     underline="none"
                     target="_blank"
                   >
                     <p>Telegram</p>
+                  </Link>
+                </MenuItem>
+                <MenuItem key={5} onClick={handleCloseUserMenu}>
+                  <Link
+                    href="https://medium.com/@nostracity"
+                    underline="none"
+                    target="_blank"
+                  >
+                    <p>Medium</p>
+                  </Link>
+                </MenuItem>
+                <MenuItem key={6} onClick={handleCloseUserMenu}>
+                  <Link
+                    href="https://bit.ly/3GPBHxl"
+                    underline="none"
+                    target="_blank"
+                  >
+                    <p>Youtube</p>
                   </Link>
                 </MenuItem>
               </Menu>

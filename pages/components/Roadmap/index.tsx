@@ -9,85 +9,94 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styles from "./Roadmap.module.css";
+import CheckedIcon from "../../../public/icons/checkbox-line.png"
+import UncheckedIcon from "../../../public/icons/checkbox-blank-line.png"
+import Image from "next/image"
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 export default function Roadmap() {
   return (
-    <Timeline position="alternate" id="roadmap">
+    <>
+    <Container maxWidth="lg" sx={{paddingTop: "64px"}} id="roadmap">
+    <Typography variant="h3" gutterBottom textAlign="center">Roadmap</Typography>
+    <Timeline position="alternate"  sx={{paddingTop: "78px"}}>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="secondary" />
+          <TimelineDot sx={{backgroundColor: "#93100D"}} />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <h4>2021 - January 2022</h4>
+          <h3 style={{textTransform: "uppercase"}}>2021 - January 2022</h3>
           <div>
             <ul className={styles.liReverted}>
-              <li>Start of community building</li>
-              <li>Start of recruiting</li>
-              <li>First draft of docs</li>
-              <li>First whitelisters chosen</li>
-              <li> Development Kickoff</li>
+              <li className={styles.liClass}><span ><Image src={CheckedIcon} /></span>Start of community building</li>
+              <li className={styles.liClass}><span><Image src={CheckedIcon} /></span>Start of recruiting</li>
+              <li className={styles.liClass}><span><Image src={CheckedIcon} /></span>First draft of docs</li>
+              <li className={styles.liClass}><span><Image src={CheckedIcon} /></span>First whitelisters chosen</li>
+              <li className={styles.liClass}><span><Image src={CheckedIcon} /></span>Development Kickoff</li>
             </ul>
           </div>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="success" />
+          <TimelineDot sx={{backgroundColor: 'black'}} />
         </TimelineSeparator>
         <TimelineContent>
-          <h4>February 2022</h4>
+          <h3 style={{textTransform: "uppercase"}}>February 2022</h3>
           <div>
             <ul className={styles.liReverted}>
-              <li> More Whitelist Spots Announced</li>
-              <li> First AMA with Boss dox</li>
-              <li> Marketing Kickoff</li>
-              <li> Update Docs with Gameplay Mechanics</li>
-              <li> Development Kickoff</li>
-              <li> Core Team Dox</li>
-              <li>Families Reveal</li>
-              <li>Target Projects Revealed</li>
+              <li className={styles.liClass}>More Whitelist Spots Announced<span><Image src={CheckedIcon} /></span></li>
+              <li className={styles.liClass}>First AMA with Boss dox<span><Image src={CheckedIcon} /></span></li>
+              <li className={styles.liClass}>Marketing Kickoff<span><Image src={CheckedIcon} /></span></li>
+              <li className={styles.liClass}>Update Docs with Gameplay Mechanics<span><Image src={CheckedIcon} /></span></li>
+              <li className={styles.liClass}>Core Team Dox<span><Image src={UncheckedIcon} /></span></li>
+              <li className={styles.liClass}>Families Reveal<span><Image src={UncheckedIcon} /></span></li>
+              <li className={styles.liClass}>Target Projects Revealed<span><Image src={UncheckedIcon} /></span></li>
             </ul>
           </div>
         </TimelineContent>
       </TimelineItem>
         <TimelineItem>
         <TimelineSeparator>
-            <TimelineDot color="secondary" />
+            <TimelineDot sx={{backgroundColor: "#93100D" }} />
             <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-            <h4>March 2022</h4>
+            <h3 style={{textTransform: "uppercase"}}>March 2022</h3>
             <div>
                 <ul className={styles.liReverted}>
-                    <li>Business NFTs minted</li>
-                    <li>Exchange your Business NFTs for a PFP</li>
-                    <li>Tokens Distributed to NFT holders</li>
-                    <li>Further Marketing Efforts</li>
-                    <li>Winning Family Receives Prize</li>
-                    <li>Token Launch</li>
-                    <li>Bonding Launch</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Business NFTs minted</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Exchange your Business NFTs for a PFP</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Tokens Distributed to NFT holders</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Further Marketing Efforts</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Winning Family Receives Prize</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Token Launch</li>
+                    <li className={styles.liClass}><span><Image src={UncheckedIcon} /></span>Bonding Launch</li>
                  </ul>
              </div>
         </TimelineContent>
         </TimelineItem>
         <TimelineItem>
         <TimelineSeparator>
-            <TimelineDot color="secondary" />
+            <TimelineDot sx={{backgroundColor: "black" }} />
             <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-            <h4>Q2 2022</h4>
+            <h3 style={{textTransform: "uppercase"}}>Q2 2022</h3>
             <div>
                 <ul className={styles.liReverted}>
-                    <li>Code Audit</li>
-                    <li>Initial Investments</li>
-                    <li>Coingecko and Coinmarketcap Listing</li>
-                    <li>Nodes</li>
+                    <li className={styles.liClass}>Code Audit<span><Image src={UncheckedIcon} /></span></li>
+                    <li className={styles.liClass}>Initial Investments<span><Image src={UncheckedIcon} /></span></li>
+                    <li className={styles.liClass}>Coingecko and Coinmarketcap Listing<span><Image src={UncheckedIcon} /></span></li>
+                    <li className={styles.liClass}>Nodes<span><Image src={UncheckedIcon} /></span></li>
                 </ul>
             </div>
             </TimelineContent>
         </TimelineItem>       
     </Timeline>
+    </ Container>
+    </>
   );
 }
